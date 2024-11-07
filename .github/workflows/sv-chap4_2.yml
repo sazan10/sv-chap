@@ -77,7 +77,7 @@ jobs:
           ulimit -c unlimited
           cd sv-benchmarks/c
           mkdir -p chap_results
-     
+    
           is_executable() {
             local file="$1"
             if file "$file" | grep -q 'ELF 64-bit'; then
