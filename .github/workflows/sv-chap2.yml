@@ -80,7 +80,7 @@ jobs:
           }
           run_exe() {
             local executable="$1"
-            "$executable"
+            timeout 10s "$executable"
             # local exit_status=$?
           }
           find . -type f -executable | while read -r file; do
