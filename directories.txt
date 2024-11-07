@@ -1,1 +1,1 @@
-./array-cav19/ ./array-crafted/ ./array-examples/ ./array-fpi/ ./array-industry-pattern/ ./array-lopstr16/ ./array-memsafety-realloc/ ./array-memsafety/ ./array-multidimensional/ ./array-patterns/ 
+./array-cav19/ ./array-examples/ ./array-industry-pattern/ ./array-lopstr16/ ./array-memsafety/ 
