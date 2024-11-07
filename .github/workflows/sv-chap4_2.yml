@@ -29,7 +29,7 @@ jobs:
           cd build-chap
           cmake ../
           make
-      - name: Run VMware Chap Analyzer
+      - name: Setup and compile SV-benchmark
         run: |
           set +e
           directory="$GITHUB_WORKSPACE"
@@ -70,6 +70,14 @@ jobs:
                   echo "Directory $dir does not exist. Skipping."
               fi
           done 
+      - name: Run VMware Chap Analyzer
+        run: |
+          set +e
+          directory="$GITHUB_WORKSPACE"
+          ulimit -c unlimited
+          cd sv-benchmarks/c
+          mkdir -p chap_results
+     
           is_executable() {
             local file="$1"
             if file "$file" | grep -q 'ELF 64-bit'; then
