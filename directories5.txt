@@ -1,1 +1,1 @@
-./loop-lit ./loop-industry-pattern ./loop-new/ ./loop-simple/ ./memsafety-bftpd/ 
+./loop-lit ./loop-new/ ./loop-simple/ ./memsafety-bftpd/ 
